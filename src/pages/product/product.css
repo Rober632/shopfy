@@ -1,0 +1,221 @@
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product .container {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product .container .navbar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.product .container .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.product .container .itemContainer .infoContainer {
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product .container .itemContainer .infoContainer .description {
+  margin: 2% 1%;
+  font-size: 16px;
+  color: gray;
+}
+
+.product .container .itemContainer .infoContainer .price {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 1% 1%;
+}
+
+.product .container .itemContainer .infoContainer .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: orange;
+  border-color: orangered;
+  padding: 6px;
+  width: 80%;
+  cursor: pointer;
+  margin-top: 20px;
+  -webkit-margin-start: -45px;
+          margin-inline-start: -45px;
+}
+
+.product .container .itemContainer .infoContainer .add:hover {
+  background-color: #F0B36A;
+  color: #fff;
+}
+
+.product .container .itemContainer .infoContainer .add .shoppingIcon {
+  margin: 5px 10px;
+}
+
+.product .container .itemContainer .infoContainer div {
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0 30px;
+}
+
+.product .container .itemContainer .infoContainer div .favorite-icon {
+  font-size: 30px;
+  margin: 6px;
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid orangered;
+  border-radius: 50%;
+  background-color: #faf9f6;
+  color: orange;
+}
+
+.product .container .itemContainer .infoContainer div .favorite-icon:hover {
+  background-color: #F0B36A;
+  color: #fff;
+  cursor: pointer;
+}
+
+.product .container .itemContainer .img {
+  width: 30%;
+  margin: 5%;
+}
+
+.msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 5%;
+  justify-content: center;
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.msg .msg-img {
+  width: 25px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+  padding: 5px 10px;
+}
+
+#loader {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #065c5c;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=product.css.map */

@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 18px;
+    }
+    .wishlistCard{
+        display: flex;
+        border-top: 1px solid gray;
+        padding: 25px;
+        margin-left: 20px;
+        width: 90%;   
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-right: 40px;
+            align-items: flex-start;
+            .title{
+                font-weight: 500;
+                font-size: 24px;
+                margin-top: 10px;
+                width: 350px;
+            }
+            .rating{
+                margin-top: -10px;
+                margin-left: -3px;
+                font-size: 25px;
+            }
+        }
+        .price{
+            width: 60px;
+        }
+        .img{
+            width: 140px;
+            height: 160px;
+            align-self: center;
+        }
+        .icons{
+            display: flex;
+            flex-direction: row;
+                .delete-icon , .shopping-icon{
+                    color: white;
+                    background-color: rgb(60, 60, 61);
+                    margin: 3px;
+                    padding: 5px;
+                    font-size: 19px;
+                    border-radius: 5px;
+                    align-self: flex-end;
+                    justify-self: end;
+                    &:hover{
+                        color:white;
+                        background-color: blueviolet;
+                        cursor: pointer;
+                    }
+                }
+        }
+    }
+}
+

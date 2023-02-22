@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    font-family: Merriweather;
+  }
+  .App{
+    display: flex;
+  }
+  
+  .content{
+    flex:9;
+  }
+  
+  #Dark{
+    .productCard{
+        background-color: #424548;
+        
+        svg , .price{
+            color:rgb(199, 196, 196);
+        }
+        svg:hover{
+            color:white;
+        }
+        .title{
+            color:white;
+        }
+        .fav-icon-activated{
+            color: rgb(25, 25, 230);
+            &:hover{color: blueviolet}
+        }
+    }
+    .navbar , .sidebar ,.home ,.page ,.container{
+      background-color: #121212;
+      .header{
+          color:white;
+      }
+      h1 ,h2 , h5,  h6 , p , span, .cart-icon , .fav-icon{
+          color: white;
+      }
+      .price , .description {
+          color :rgb(199, 196, 196);
+      }
+      .link{
+          color: white;
+          border-color: white;
+      }
+    }
+    .home{
+        .filterControl{
+            label{
+                color:rgb(199, 196, 196);
+            }
+            fieldset{
+                border-color: white;
+            }
+            svg{
+                color: white;
+            }
+            .css-yjsfm1{
+                span{
+                    color:white;
+                }
+            }
+        }
+    }
+  }  
+
+fieldset{
+    border-radius: 50%;
+}

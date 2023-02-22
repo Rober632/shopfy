@@ -1,0 +1,109 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 6.6vh;
+  background-color: #065c5c;
+  border-bottom: 1px solid gray;
+}
+
+.navbar .home-btn {
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+  color: #dfdbdb;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar .home-btn:hover {
+  color: white;
+}
+
+.navbar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px outset white;
+  width: 50%;
+  margin: 0 20px;
+}
+
+.navbar .search:hover {
+  border-bottom: 1px solid blueviolet;
+}
+
+.navbar .search .searchbar {
+  width: 95%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.navbar .search .search-icon {
+  cursor: text;
+  color: white;
+}
+
+.navbar .search:focus {
+  border-bottom: 1px outset black;
+}
+
+.navbar .navbar-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-options .notif {
+  position: relative;
+}
+
+.navbar .navbar-options .shopping-icon {
+  color: #dfdbdb;
+  font-size: 30px;
+  margin-top: 4px;
+}
+
+.navbar .navbar-options .shopping-icon:hover {
+  color: white;
+}
+
+.navbar .navbar-options .shopping-notification {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  padding: 0px 4px;
+  border-radius: 100%;
+  background: #ff8e0d;
+  color: white;
+}
+
+.navbar .navbar-options .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=navbar.css.map */

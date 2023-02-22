@@ -1,0 +1,143 @@
+
+    .product{
+        display: flex;
+        .container{
+            flex: 8;
+            justify-content: start;
+            flex-direction: column;
+            .navbar{
+                flex-grow: 0;
+            }
+            .itemContainer{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 90%;
+                .infoContainer{
+                    margin-left: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    .description{
+                        margin: 2% 1%;
+                        font-size: 16px;
+                        color: gray;
+                    }
+                    .price{
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin: 0 0 1% 1%;
+                    }
+                    .add{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;              
+                        color: white;
+                        background-color: orange;
+                        border-color: orangered;
+                        padding: 6px;
+                        width: 80%;
+                        cursor: pointer;
+                        margin-top: 20px;
+                        margin-inline-start: -45px;
+                        &:hover{
+                            background-color: #F0B36A;
+                            color:#fff;
+                        }
+                        .shoppingIcon{
+                            margin: 5px 10px;
+                           
+                        }
+                    }
+                    div{
+                        margin-top: 3%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 10px 0 0 30px;
+                        .favorite-icon{
+                            font-size: 30px;
+                            margin: 6px;
+                            margin-top: 20px;
+                            padding: 5px;
+                            border: 1px solid orangered;
+                            border-radius: 50%;
+                            background-color: #faf9f6;
+                            color: orange;
+                            &:hover{
+                                background-color: #F0B36A;
+                                color:#fff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .img{
+                    width: 30%;
+                    margin: 5%;
+                }
+            }
+        }
+    }
+
+    .msg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        bottom: 5%;
+        justify-content: center;
+        background-color: red;
+        padding: 10px 20px;
+        border-radius: 10px;
+        .msg-img{
+            width: 25px;
+            margin-inline-end: 10px;
+            padding: 5px 10px;
+        }
+    }
+
+    #loader {
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        z-index: 1;
+        width: 120px;
+        height: 120px;
+        margin: -76px 0 0 -76px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid rgb(6, 92, 92);
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+      
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Add animation to "page content" */
+      .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s
+      }
+      
+      @-webkit-keyframes animatebottom {
+        from { bottom:-100px; opacity:0 } 
+        to { bottom:0px; opacity:1 }
+      }
+      
+      @keyframes animatebottom { 
+        from{ bottom:-100px; opacity:0 } 
+        to{ bottom:0; opacity:1 }
+      }
+      

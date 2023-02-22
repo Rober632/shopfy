@@ -1,0 +1,100 @@
+.sidebar{
+    display: flex;
+    flex: 2;
+    height: 100vh;
+    flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    background-color: rgb(6, 92, 92);
+    border-right: 1px solid gray;
+    .logo{
+        display: flex;
+        border-bottom: 1px solid gray;
+        padding: 15px 0px;
+        min-width: 100%;
+        height: 3vh;
+        .logo-text{
+            color:rgb(223, 219, 219);
+            font-weight: 700;
+            font-size: 24px;
+            margin: auto;
+        }
+    }
+    .filter , .account , .settings , .support , .modeToggle{
+        margin-top: 25px;
+        .header{
+        font-weight: 400;
+        color: rgb(223, 219, 219);
+        font-size: 18px;
+        margin: 25px;
+        }
+        .options-price{
+            font-weight: 100;
+            font-size: 16px;
+            margin-inline-start: 45px;
+            color: rgb(199, 196, 196);
+        }
+        .options , .options-language{
+            font-weight: 100;
+            font-size: 16px;
+            margin-inline-start: 45px;
+            color: rgb(199, 196, 196);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            &:hover{
+                cursor: pointer;
+                color:white;
+            }
+        }
+        .options-language{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .languages{
+            margin-inline-start: 70px;
+            .language{
+                color:rgb(161, 161, 161);
+                padding: 5px;
+                display: block;
+                &:hover{
+                    cursor: pointer;
+                    color:white;
+                }
+            }
+        }
+
+    }
+    .mode{
+        background-color: transparent;
+        width: fit-content;
+        color: rgb(199, 196, 196);
+        margin-inline-start: 45px;
+        padding: 0;
+        &:hover{
+            cursor: pointer;
+            color:white;
+        }
+    }
+    .slider{
+        max-width: 70%;
+        margin-inline-start: 45px;
+        button{
+            background-color:transparent;
+            border: none;
+            color: rgb(199, 196, 196);
+            margin-inline-start: 70%;
+            &:hover{
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.languages{
+   margin-inline-start: 400px;
+}

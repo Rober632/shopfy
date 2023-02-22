@@ -1,0 +1,107 @@
+Link {
+  text-decoration: none;
+  color: #000;
+}
+
+.productCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+  height: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.productCard .img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 80px;
+  height: 80px;
+  padding: 25px 0 0 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.productCard .title {
+  font-size: smaller;
+  padding: 10px;
+  margin-bottom: 0;
+  color: black;
+  text-decoration: none;
+}
+
+.productCard .title:hover {
+  color: #c44343;
+  cursor: pointer;
+}
+
+.productCard .rating {
+  margin-top: 0;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 18px;
+}
+
+.productCard div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.productCard div .shopping-icon {
+  -webkit-margin-start: 15px;
+          margin-inline-start: 15px;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.productCard div .shopping-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.productCard div .fav-icon-activated {
+  color: blue;
+}
+
+.productCard div .fav-icon-activated:hover {
+  cursor: pointer;
+  color: #494941;
+}
+
+.productCard div .fav-icon {
+  color: black;
+}
+
+.productCard div .fav-icon:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.productCard div .price {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0 15px 15px 0;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  cursor: default;
+}
+/*# sourceMappingURL=productComponent.css.map */

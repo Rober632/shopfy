@@ -1,0 +1,58 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ecebeb;
+}
+
+.home .Homecontainer {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .Homecontainer .filter {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1% 4%;
+}
+
+.home .Homecontainer .navbar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.home .Homecontainer h1 {
+  text-align: center;
+  margin: 3% 0 0 2%;
+}
+
+.home .Homecontainer .productItemContainer {
+  width: 94%;
+  margin-left: 5px;
+  margin-bottom: 50px;
+}
+
+.home .Homecontainer .productItemContainer .productItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 25px;
+}
+/*# sourceMappingURL=home.css.map */

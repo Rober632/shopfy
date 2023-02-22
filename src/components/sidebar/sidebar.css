@@ -1,0 +1,146 @@
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  top: 0;
+  background-color: #065c5c;
+  border-right: 1px solid gray;
+}
+
+.sidebar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid gray;
+  padding: 15px 0px;
+  min-width: 100%;
+  height: 3vh;
+}
+
+.sidebar .logo .logo-text {
+  color: #dfdbdb;
+  font-weight: 700;
+  font-size: 24px;
+  margin: auto;
+}
+
+.sidebar .filter, .sidebar .account, .sidebar .settings, .sidebar .support, .sidebar .modeToggle {
+  margin-top: 25px;
+}
+
+.sidebar .filter .header, .sidebar .account .header, .sidebar .settings .header, .sidebar .support .header, .sidebar .modeToggle .header {
+  font-weight: 400;
+  color: #dfdbdb;
+  font-size: 18px;
+  margin: 25px;
+}
+
+.sidebar .filter .options-price, .sidebar .account .options-price, .sidebar .settings .options-price, .sidebar .support .options-price, .sidebar .modeToggle .options-price {
+  font-weight: 100;
+  font-size: 16px;
+  -webkit-margin-start: 45px;
+          margin-inline-start: 45px;
+  color: #c7c4c4;
+}
+
+.sidebar .filter .options, .sidebar .filter .options-language, .sidebar .account .options, .sidebar .account .options-language, .sidebar .settings .options, .sidebar .settings .options-language, .sidebar .support .options, .sidebar .support .options-language, .sidebar .modeToggle .options, .sidebar .modeToggle .options-language {
+  font-weight: 100;
+  font-size: 16px;
+  -webkit-margin-start: 45px;
+          margin-inline-start: 45px;
+  color: #c7c4c4;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar .filter .options:hover, .sidebar .filter .options-language:hover, .sidebar .account .options:hover, .sidebar .account .options-language:hover, .sidebar .settings .options:hover, .sidebar .settings .options-language:hover, .sidebar .support .options:hover, .sidebar .support .options-language:hover, .sidebar .modeToggle .options:hover, .sidebar .modeToggle .options-language:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar .filter .options-language, .sidebar .account .options-language, .sidebar .settings .options-language, .sidebar .support .options-language, .sidebar .modeToggle .options-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.sidebar .filter .languages, .sidebar .account .languages, .sidebar .settings .languages, .sidebar .support .languages, .sidebar .modeToggle .languages {
+  -webkit-margin-start: 70px;
+          margin-inline-start: 70px;
+}
+
+.sidebar .filter .languages .language, .sidebar .account .languages .language, .sidebar .settings .languages .language, .sidebar .support .languages .language, .sidebar .modeToggle .languages .language {
+  color: #a1a1a1;
+  padding: 5px;
+  display: block;
+}
+
+.sidebar .filter .languages .language:hover, .sidebar .account .languages .language:hover, .sidebar .settings .languages .language:hover, .sidebar .support .languages .language:hover, .sidebar .modeToggle .languages .language:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar .mode {
+  background-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #c7c4c4;
+  -webkit-margin-start: 45px;
+          margin-inline-start: 45px;
+  padding: 0;
+}
+
+.sidebar .mode:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.sidebar .slider {
+  max-width: 70%;
+  -webkit-margin-start: 45px;
+          margin-inline-start: 45px;
+}
+
+.sidebar .slider button {
+  background-color: transparent;
+  border: none;
+  color: #c7c4c4;
+  -webkit-margin-start: 70%;
+          margin-inline-start: 70%;
+}
+
+.sidebar .slider button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.languages {
+  -webkit-margin-start: 400px;
+          margin-inline-start: 400px;
+}
+/*# sourceMappingURL=sidebar.css.map */

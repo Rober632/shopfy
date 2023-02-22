@@ -1,38 +1,82 @@
+body {
+  margin: 0;
+  font-family: Merriweather;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.content {
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+}
+
+#Dark .productCard {
+  background-color: #424548;
+}
+
+#Dark .productCard svg, #Dark .productCard .price {
+  color: #c7c4c4;
+}
+
+#Dark .productCard svg:hover {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Dark .productCard .title {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Dark .productCard .fav-icon-activated {
+  color: #1919e6;
 }
+
+#Dark .productCard .fav-icon-activated:hover {
+  color: blueviolet;
+}
+
+#Dark .navbar, #Dark .sidebar, #Dark .home, #Dark .page, #Dark .container {
+  background-color: #121212;
+}
+
+#Dark .navbar .header, #Dark .sidebar .header, #Dark .home .header, #Dark .page .header, #Dark .container .header {
+  color: white;
+}
+
+#Dark .navbar h1, #Dark .navbar h2, #Dark .navbar h5, #Dark .navbar h6, #Dark .navbar p, #Dark .navbar span, #Dark .navbar .cart-icon, #Dark .navbar .fav-icon, #Dark .sidebar h1, #Dark .sidebar h2, #Dark .sidebar h5, #Dark .sidebar h6, #Dark .sidebar p, #Dark .sidebar span, #Dark .sidebar .cart-icon, #Dark .sidebar .fav-icon, #Dark .home h1, #Dark .home h2, #Dark .home h5, #Dark .home h6, #Dark .home p, #Dark .home span, #Dark .home .cart-icon, #Dark .home .fav-icon, #Dark .page h1, #Dark .page h2, #Dark .page h5, #Dark .page h6, #Dark .page p, #Dark .page span, #Dark .page .cart-icon, #Dark .page .fav-icon, #Dark .container h1, #Dark .container h2, #Dark .container h5, #Dark .container h6, #Dark .container p, #Dark .container span, #Dark .container .cart-icon, #Dark .container .fav-icon {
+  color: white;
+}
+
+#Dark .navbar .price, #Dark .navbar .description, #Dark .sidebar .price, #Dark .sidebar .description, #Dark .home .price, #Dark .home .description, #Dark .page .price, #Dark .page .description, #Dark .container .price, #Dark .container .description {
+  color: #c7c4c4;
+}
+
+#Dark .navbar .link, #Dark .sidebar .link, #Dark .home .link, #Dark .page .link, #Dark .container .link {
+  color: white;
+  border-color: white;
+}
+
+#Dark .home .filterControl label {
+  color: #c7c4c4;
+}
+
+#Dark .home .filterControl fieldset {
+  border-color: white;
+}
+
+#Dark .home .filterControl svg {
+  color: white;
+}
+
+#Dark .home .filterControl .css-yjsfm1 span {
+  color: white;
+}
+
+fieldset {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=App.css.map */

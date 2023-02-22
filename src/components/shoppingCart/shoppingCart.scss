@@ -1,0 +1,117 @@
+.container{
+
+    .shoppingCartCard{
+        display: flex;
+        border-top: 1px solid gray;
+        padding: 25px;
+        margin-left: 20px;
+        flex-direction: row;
+        // justify-content: start;
+    
+        .info{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            margin-right: 40px;
+            align-items: flex-start;
+            .title{
+                font-weight: 900;
+                max-width: 200px;
+
+            }
+            .rating{
+                margin-top: -10px;
+                margin-left: -3px;
+                font-size: 20px;
+            }
+        }
+        .price{
+            width: 60px;
+        }
+        .quantity{
+            margin: 0 40px;
+            .wrapper{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: rgb(60, 60, 61);
+                height: 30px;
+                width: 70px;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                span{
+                    font-size: 15px;
+                    font-weight: 500;
+                    cursor: default;
+                    color: white;
+                }
+                .num{
+                    padding: 0 6px;
+                    font-size: 18px;
+                }
+                .minus{
+                    padding-left: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        color:rgb(214, 214, 214);
+                    }
+                }
+                .plus{
+                    padding-right: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        color:rgb(214, 214, 214);
+                    }
+                }
+            }
+        }
+        .img{
+            width: 140px;
+            height: 160px;
+            align-self: center;
+        }
+        div{
+           display: flex;
+           flex-direction: column;
+            .price{
+                margin-top: 5vh;
+                font: 500;
+            }
+        }
+        .last{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            grid-row: 1;
+            .finalPrice{
+                span{
+                    margin-top: 0;
+                }
+            }
+        }
+        .icons{
+            display: flex;
+            flex-direction: row;
+                .delete-icon , .favorite-icon{
+                    color: white;
+                    background-color: rgb(60, 60, 61);
+                    margin: 3px;
+                    padding: 4px;
+                    font-size: 19px;
+                    border-radius: 5px;
+                    align-self: flex-end;
+                    justify-self: end;
+                    &:hover{
+                        color:white;
+                        background-color: blueviolet;
+                        cursor: pointer;
+                    }
+                }
+        }
+    }
+}
+
+    p{
+        font-size: 18px;
+    }

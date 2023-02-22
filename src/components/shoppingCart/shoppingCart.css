@@ -1,0 +1,173 @@
+.container .shoppingCartCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid gray;
+  padding: 25px;
+  margin-left: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .shoppingCartCard .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .shoppingCartCard .info .title {
+  font-weight: 900;
+  max-width: 200px;
+}
+
+.container .shoppingCartCard .info .rating {
+  margin-top: -10px;
+  margin-left: -3px;
+  font-size: 20px;
+}
+
+.container .shoppingCartCard .price {
+  width: 60px;
+}
+
+.container .shoppingCartCard .quantity {
+  margin: 0 40px;
+}
+
+.container .shoppingCartCard .quantity .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #3c3c3d;
+  height: 30px;
+  width: 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .shoppingCartCard .quantity .wrapper span {
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+  color: white;
+}
+
+.container .shoppingCartCard .quantity .wrapper .num {
+  padding: 0 6px;
+  font-size: 18px;
+}
+
+.container .shoppingCartCard .quantity .wrapper .minus {
+  padding-left: 10px;
+}
+
+.container .shoppingCartCard .quantity .wrapper .minus:hover {
+  cursor: pointer;
+  color: #d6d6d6;
+}
+
+.container .shoppingCartCard .quantity .wrapper .plus {
+  padding-right: 10px;
+}
+
+.container .shoppingCartCard .quantity .wrapper .plus:hover {
+  cursor: pointer;
+  color: #d6d6d6;
+}
+
+.container .shoppingCartCard .img {
+  width: 140px;
+  height: 160px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .shoppingCartCard div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .shoppingCartCard div .price {
+  margin-top: 5vh;
+  font: 500;
+}
+
+.container .shoppingCartCard .last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.container .shoppingCartCard .last .finalPrice span {
+  margin-top: 0;
+}
+
+.container .shoppingCartCard .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .shoppingCartCard .icons .delete-icon, .container .shoppingCartCard .icons .favorite-icon {
+  color: white;
+  background-color: #3c3c3d;
+  margin: 3px;
+  padding: 4px;
+  font-size: 19px;
+  border-radius: 5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.container .shoppingCartCard .icons .delete-icon:hover, .container .shoppingCartCard .icons .favorite-icon:hover {
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+}
+/*# sourceMappingURL=shoppingCart.css.map */
